@@ -1,0 +1,10 @@
+
+<div class="flex relative checkbox">
+    <input (click)="toggle()" [disabled]="disabled" [readOnly]="readonly" [required]="required" [value]="isChecked" [checked]="isChecked" type="checkbox" [name]="name" [id]="id" [autocomplete]="autocomplete"
+    [ngClass]="{'cursor-default' : disabled}" type="checkbox" id="some_id" name="card"/>
+  
+    <svg class="absolute" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="16" height="16" rx="4" fill="#0EA0C0"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.19546 10.8248L4.1955 9.02452C3.93483 8.78988 3.93483 8.41063 4.1955 8.176C4.45616 7.94137 4.87748 7.94137 5.13814 8.176L6.62878 9.51779L10.8274 5.20978C11.0674 4.95775 11.488 4.92894 11.7667 5.14437C12.0467 5.3604 12.0793 5.73846 11.8393 5.98989L7.17277 10.7906C7.0521 10.9178 6.87744 10.9934 6.69211 11C6.49012 11.0006 6.32012 10.9376 6.19546 10.8248Z" fill="white"/>
+  </svg>
+</div>

@@ -1,0 +1,37 @@
+<div class="flex flex-col h-full relative custom__search">
+
+    @if (currencyMask) {
+        <input
+        class="custom__search__input"
+        currencyMask
+        [ngClass]="{'error' : control && control.touched && control.invalid}"
+        [id]="id"
+        [(ngModel)]="value"
+        [placeholder]="placeholder"
+        [type]="type"
+        (blur)="onTouched($event)"
+        [name]="name"/>
+    
+    } @else {
+        <input
+        class="custom__search__input"
+        [ngClass]="{'error' : control && control.touched && control.invalid
+        }"
+        [id]="id"
+        [(ngModel)]="value" 
+        (blur)="onTouched($event)"
+        [placeholder]="placeholder"
+        [type]="type"
+        [mask]="mask"
+        [name]="name"/>
+    }
+    <label class="body-text tiny custom__search__label" [for]="for">{{ label }}</label>
+    
+    @if (control && control.touched && control.invalid) {
+        <svg class="absolute" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="16" fill="#FAD1D8"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5202 10.2977C16.3162 9.8897 15.6483 9.8897 15.4437 10.2977L10.0278 21.1295C9.93451 21.3154 9.94474 21.5369 10.0543 21.7144C10.1644 21.8919 10.3576 22.0002 10.5664 22.0002H21.3981C21.607 22.0002 21.8001 21.8919 21.9096 21.7144C22.0198 21.5369 22.03 21.3154 21.9361 21.1295L16.5202 10.2977ZM11.5398 20.7967L15.982 11.9122L20.4243 20.7967H11.5398ZM15.3801 16.5844C15.3801 16.9172 15.6491 17.1862 15.9818 17.1862C16.3146 17.1862 16.5836 16.9172 16.5836 16.5844V15.3809C16.5836 15.0481 16.3146 14.7791 15.9818 14.7791C15.6491 14.7791 15.3801 15.0481 15.3801 15.3809V16.5844ZM15.3203 18.9916C15.3203 19.3569 15.617 19.6529 15.9823 19.6529C16.3475 19.6529 16.6442 19.3569 16.6442 18.9916C16.6442 18.6257 16.3475 18.3297 15.9823 18.3297C15.617 18.3297 15.3203 18.6257 15.3203 18.9916Z" fill="#E6173E"/>
+        </svg>
+    }
+        
+</div>

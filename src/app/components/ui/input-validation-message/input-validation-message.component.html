@@ -1,0 +1,31 @@
+<div class="flex absolute">
+    @if (control && control.touched) {
+        <ul class="flex">
+            @if (control.hasError('required') && !control.value) {
+                <li class="flex">
+                    <span>Campo obrigatório!</span>
+                </li>
+            }
+            @if (control.hasError('email') && control.value) {
+                <li class="flex" >
+                    <span>Endereço de E-mail inválido!</span>
+                </li>
+            }
+            @if (control.hasError('cpf') && control.value) {
+                <li class="flex" >
+                    <span>CPF inválido!</span>
+                </li>
+            }
+            @if (control.hasError('age') && control.value) {
+                <li class="flex" >
+                    <span>Idade deve ser maior que 18 anos e menor que 60 anos.</span>
+                </li>
+            }
+            @if (control.hasError('surname') && control.value) {
+                <li class="flex" >
+                    <span>Campo deve conter nome e sobrenome.</span>
+                </li>
+            }
+        </ul>
+    }
+</div>

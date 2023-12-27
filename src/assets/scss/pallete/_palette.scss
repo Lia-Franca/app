@@ -1,0 +1,65 @@
+:root {    
+    --color-brand-primary-darkest: #002C37;
+    --color-brand-primary-dark: #0A4A5B;
+    --color-brand-primary-regular: #0B4051;
+    --color-brand-primary-medium: #00586F;
+    --color-brand-primary-light: #11728B;
+    --color-brand-primary-lightest: #7FABB7;
+
+
+    --color-support-02-darkest: #7A6019;
+    --color-support-02-dark: #C49A28;
+    --color-support-02-medium: #F5C132;
+    --color-support-02-light: #F8D36F;
+    --color-support-02-lightest: #FBE6AD;
+
+    --color-brand-secondary-darkest: #075060;
+    --color-brand-secondary-dark: #0B8099;
+    --color-brand-secondary-medium: #0EA0C0;
+    --color-brand-secondary-light: #56BCD2;
+    --color-brand-secondary-lightest: #9ED9E5;
+
+    --color-support-02-darkest: #7A6019;
+    --color-support-02-dark: #C49A28;
+    --color-support-02-medium: #F5C132;
+    --color-support-02-light: #F8D36F;
+    --color-support-02-lightest: #FBE6AD;
+
+    --color-support-03-darkest: #396C29;
+    --color-support-03-dark: #5CAC41;
+    --color-support-03-medium: #73D852;
+    --color-support-03-light: #9DE385;
+    --color-support-03-lightest: #C7EFB9;
+
+    --color-neutral-darkest: #1A1A1A;
+    --color-neutral-dark: #4F4F4F;
+    --color-neutral-medium: #9E9E9E;
+    --color-neutral-light: #D8D8D8;
+    --color-neutral-lightest: #EDEDED;
+    --color-neutral-lighter: #F7F7F7;
+    --color-neutral-white: #FFFFFF;
+
+    --color-feedback-success-darkest: #225230;
+    --color-feedback-success-dark: #337B47;
+    --color-feedback-success-medium: #44A45F;
+    --color-feedback-success-light: #8FC89F;
+    --color-feedback-success-lightest: #DAEDDF;
+
+    --color-feedback-danger-darkest: #730C1F;
+    --color-feedback-danger-dark: #AD112F;
+    --color-feedback-danger-medium: #E6173E;
+    --color-feedback-danger-light: #F0748B;
+    --color-feedback-danger-lightest: #FAD1D8;
+
+    --color-feedback-info-darkest: #1E536B;
+    --color-feedback-info-dark: #2D7DA1;
+    --color-feedback-info-medium: #3CA6D6;
+    --color-feedback-info-light: #8ACAE6;
+    --color-feedback-info-lightest: #D8EDF7;
+
+    --color-linear-gradient-primary: linear-gradient(to right, #002C37 100%, #00586F 100%);
+    --color-linear-gradient-secondary: linear-gradient(to right, #7A6019 100%, #F5C132 100%);
+    --color-linear-gradient-neutral-01: linear-gradient(to right, #1A1A1A 100%, #9E9E9E 100%);
+    --color-linear-gradient-neutral-02: linear-gradient(to right, #9E9E9E 100%, #EDEDED 100%);
+    --color-linear-gradient-neutral-03: linear-gradient(to top, #FFF 49.58%, #EDEDED 99.89%);
+}

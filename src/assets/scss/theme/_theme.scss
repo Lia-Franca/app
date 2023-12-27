@@ -1,0 +1,36 @@
+
+body {
+    --navbar-bg-color: var(--color-brand-primary-darkest);
+    --navbar-text-color: var(--color-neutral-white);
+
+    --btn-primary-bg-color: var(--color-brand-primary-medium);
+    --btn-primary-text-color: var(--color-neutral-white);
+    --btn-primary-hover-bg-color: var(--color-brand-primary-light);
+    --btn-primary-focus-bg-color: var(--color-brand-primary-medium);
+    --btn-primary-focus-border-color: var(--color-feedback-info-medium);
+    --btn-primary-pressed-bg-color: var(--color-brand-primary-darkest);
+    --btn-primary-disabled-bg-color: var(--color-neutral-lightest);
+    --btn-primary-disabled-text-color: var(--color-neutral-medium);
+
+    --input-border-color: var(--color-neutral-light);
+    --input-text-color: var(--color-neutral-dark);
+    --input-placeholder-text-color: var(--color-neutral-medium);
+    --input-focus-border-color: var(--btn-primary-focus-border-color);
+    --input-label-text-color: -var(--color-brand-primary-medium);
+    --input-error-border-color: var(--color-feedback-danger-medium);
+    --input-validation-message-error: var(--color-feedback-danger-medium);
+
+    --form-border-color: var(--color-neutral-light);
+
+    --grid-header-bg-color: var(--color-brand-primary-light);
+    --grid-header-text-color: var(--color-neutral-white);
+    --grid-row-text-color: var(--color-neutral-dark);
+    --grid-odd-row-bg-color: var(--color-neutral-white);
+    --grid-even-row-bg-color: var(--color-neutral-lighter);
+
+    --customers-bg-color: var(--color-linear-gradient-neutral-03);
+    --customers-title-color: var(--color-brand-primary-regular);
+    --customers-icon-fill-color: var(--color-neutral-medium);
+    --customer-icon-fill-hover-color: var(--color-neutral-dark);
+    --alert--text-color : var(--color-brand-primary-medium);
+}

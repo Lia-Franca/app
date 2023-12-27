@@ -1,0 +1,256 @@
+{
+  "Customer": [
+    {
+      "id": 1,
+      "NomeCliente": "Carlos Silva",
+      "Cpf": "34567890123",
+      "DataNascimento": "1980-03-07T21:53:16.953-03:00",
+      "Email": "carlos@gmail.com",
+      "DataCadastro": "2023-01-08T21:53:16.953-03:00",
+      "RendaMensal": 6000
+    },
+    {
+      "id": 2,
+      "NomeCliente": "Rafael Oliveira",
+      "Cpf": "98765432100",
+      "DataNascimento": "1985-05-15T00:00:00.000-03:00",
+      "RendaMensal": 6000,
+      "Email": "rafael@gmail.com",
+      "DataCadastro": "2023-12-27T02:22:22.753-03:00"
+    },
+    {
+      "id": 3,
+      "NomeCliente": "Fernanda Silva",
+      "Cpf": "23456789012",
+      "DataNascimento": "1990-08-22T21:53:16.953-03:00",
+      "Email": "fernanda@gmail.com",
+      "DataCadastro": "2022-12-12T21:53:16.953-03:00",
+      "RendaMensal": 7000
+    },
+    {
+      "id": 4,
+      "NomeCliente": "Carlos Rocha",
+      "Cpf": "34567890123",
+      "DataNascimento": "1980-03-07T21:53:16.953-03:00",
+      "Email": "carlos@gmail.com",
+      "DataCadastro": "2023-01-08T21:53:16.953-03:00",
+      "RendaMensal": 8000
+    },
+    {
+      "id": 5,
+      "NomeCliente": "Mariana Costa",
+      "Cpf": "90123456789",
+      "DataNascimento": "1993-12-18T21:53:16.953-03:00",
+      "Email": "mariana@gmail.com",
+      "DataCadastro": "2023-02-14T21:53:16.953-03:00",
+      "RendaMensal": 9000
+    },
+    {
+      "id": 6,
+      "NomeCliente": "Rodrigo Santos",
+      "Cpf": "45678901234",
+      "DataNascimento": "1988-06-25T21:53:16.953-03:00",
+      "Email": "rodrigo@gmail.com",
+      "DataCadastro": "2023-03-03T21:53:16.953-03:00",
+      "RendaMensal": 10000
+    },
+    {
+      "id": 7,
+      "NomeCliente": "Juliana Oliveira",
+      "Cpf": "78901234567",
+      "DataNascimento": "1995-04-09T21:53:16.953-03:00",
+      "Email": "juliana@gmail.com",
+      "DataCadastro": "2023-04-20T21:53:16.953-03:00",
+      "RendaMensal": 11000
+    },
+    {
+      "id": 8,
+      "NomeCliente": "Marcos Souza",
+      "Cpf": "56789012345",
+      "DataNascimento": "1982-09-30T21:53:16.953-03:00",
+      "Email": "marcos@gmail.com",
+      "DataCadastro": "2023-05-11T21:53:16.953-03:00",
+      "RendaMensal": 12000
+    },
+    {
+      "id": 9,
+      "NomeCliente": "Carla Pereira",
+      "Cpf": "89012345678",
+      "DataNascimento": "1998-07-14T21:53:16.953-03:00",
+      "Email": "carla@gmail.com",
+      "DataCadastro": "2023-06-02T21:53:16.953-03:00",
+      "RendaMensal": 13000
+    },
+    {
+      "id": 10,
+      "NomeCliente": "Paulo Lima",
+      "Cpf": "12345678909",
+      "DataNascimento": "1984-01-26T21:53:16.953-03:00",
+      "Email": "paulo@gmail.com",
+      "DataCadastro": "2023-07-07T21:53:16.953-03:00",
+      "RendaMensal": 14000
+    },
+    {
+      "id": 11,
+      "NomeCliente": "Ana Silva",
+      "Cpf": "98765432100",
+      "DataNascimento": "1991-11-03T21:53:16.953-03:00",
+      "Email": "ana@gmail.com",
+      "DataCadastro": "2023-08-18T21:53:16.953-03:00",
+      "RendaMensal": 15000
+    },
+    {
+      "id": 12,
+      "NomeCliente": "Gustavo Santos",
+      "Cpf": "23456789012",
+      "DataNascimento": "1987-04-17T21:53:16.953-03:00",
+      "Email": "gustavo@gmail.com",
+      "DataCadastro": "2023-09-09T21:53:16.953-03:00",
+      "RendaMensal": 16000
+    },
+    {
+      "id": 13,
+      "NomeCliente": "Camila Oliveira",
+      "Cpf": "45678901234",
+      "DataNascimento": "1994-02-22T21:53:16.953-03:00",
+      "Email": "camila@gmail.com",
+      "DataCadastro": "2023-10-24T21:53:16.953-03:00",
+      "RendaMensal": 17000
+    },
+    {
+      "id": 14,
+      "NomeCliente": "Roberto Costa",
+      "Cpf": "78901234567",
+      "DataNascimento": "1989-08-08T21:53:16.953-03:00",
+      "Email": "roberto@gmail.com",
+      "DataCadastro": "2023-11-15T21:53:16.953-03:00",
+      "RendaMensal": 18000
+    },
+    {
+      "id": 15,
+      "NomeCliente": "Fernanda Lima",
+      "Cpf": "56789012345",
+      "DataNascimento": "1997-06-13T21:53:16.953-03:00",
+      "Email": "fernanda@gmail.com",
+      "DataCadastro": "2023-12-06T21:53:16.953-03:00",
+      "RendaMensal": 19000
+    },
+    {
+      "id": 16,
+      "NomeCliente": "Ricardo Souza",
+      "Cpf": "89012345609",
+      "DataNascimento": "1983-03-28T21:53:16.953-03:00",
+      "Email": "ricardo@gmail.com",
+      "DataCadastro": "2024-01-11T21:53:16.953-03:00",
+      "RendaMensal": 20000
+    },
+    {
+      "id": 17,
+      "NomeCliente": "Aline Pereira",
+      "Cpf": "12345678909",
+      "DataNascimento": "1999-01-05T21:53:16.953-03:00",
+      "Email": "aline@gmail.com",
+      "DataCadastro": "2024-02-22T21:53:16.953-03:00",
+      "RendaMensal": 21000
+    },
+    {
+      "id": 18,
+      "NomeCliente": "Renato Lima",
+      "Cpf": "98765432100",
+      "DataNascimento": "1985-10-19T21:53:16.953-03:00",
+      "Email": "renato@gmail.com",
+      "DataCadastro": "2024-03-05T21:53:16.953-03:00",
+      "RendaMensal": 22000
+    },
+    {
+      "id": 19,
+      "NomeCliente": "Luiza Silva",
+      "Cpf": "23456789012",
+      "DataNascimento": "1992-08-02T21:53:16.953-03:00",
+      "Email": "luiza@gmail.com",
+      "DataCadastro": "2024-04-20T21:53:16.953-03:00",
+      "RendaMensal": 23000
+    },
+    {
+      "id": 20,
+      "NomeCliente": "Gabriel Santos",
+      "Cpf": "45678901234",
+      "DataNascimento": "1986-05-24T21:53:16.953-03:00",
+      "Email": "gabriel@gmail.com",
+      "DataCadastro": "2024-05-11T21:53:16.953-03:00",
+      "RendaMensal": 24000
+    },
+    {
+      "id": 21,
+      "NomeCliente": "Patricia Oliveira",
+      "Cpf": "78901234567",
+      "DataNascimento": "1995-04-09T21:53:16.953-03:00",
+      "Email": "patricia@gmail.com",
+      "DataCadastro": "2024-06-02T21:53:16.953-03:00",
+      "RendaMensal": 25000
+    },
+    {
+      "id": 22,
+      "NomeCliente": "Cesar Costa",
+      "Cpf": "56789012345",
+      "DataNascimento": "1990-01-26T21:53:16.953-03:00",
+      "Email": "cesar@gmail.com",
+      "DataCadastro": "2024-07-07T21:53:16.953-03:00",
+      "RendaMensal": 26000
+    },
+    {
+      "id": 23,
+      "NomeCliente": "Isabela Lima",
+      "Cpf": "89012345609",
+      "DataNascimento": "1986-11-03T21:53:16.953-03:00",
+      "Email": "isabela@gmail.com",
+      "DataCadastro": "2024-08-18T21:53:16.953-03:00",
+      "RendaMensal": 27000
+    },
+    {
+      "id": 24,
+      "NomeCliente": "Milton Souza",
+      "Cpf": "23456789012",
+      "DataNascimento": "1993-04-17T21:53:16.953-03:00",
+      "Email": "milton@gmail.com",
+      "DataCadastro": "2024-09-09T21:53:16.953-03:00",
+      "RendaMensal": 28000
+    },
+    {
+      "id": 25,
+      "NomeCliente": "Larissa Pereira",
+      "Cpf": "56789012345",
+      "DataNascimento": "1988-02-22T21:53:16.953-03:00",
+      "Email": "larissa@gmail.com",
+      "DataCadastro": "2024-10-24T21:53:16.953-03:00",
+      "RendaMensal": 29000
+    },
+    {
+      "id": 26,
+      "NomeCliente": "Diego Lima",
+      "Cpf": "89012345609",
+      "DataNascimento": "1996-08-08T21:53:16.953-03:00",
+      "Email": "diego@gmail.com",
+      "DataCadastro": "2024-11-15T21:53:16.953-03:00",
+      "RendaMensal": 30000
+    },
+    {
+      "id": 27,
+      "NomeCliente": "Cintia Silva",
+      "Cpf": "12345678909",
+      "DataNascimento": "1981-06-13T21:53:16.953-03:00",
+      "Email": "cintia@gmail.com",
+      "DataCadastro": "2024-12-06T21:53:16.953-03:00",
+      "RendaMensal": 31000
+    },
+    {
+      "id": 28,
+      "NomeCliente": "Felipe Santos",
+      "Cpf": "98765432100",
+      "DataNascimento": "1997-03-28T21:53:16.953-03:00",
+      "Email": "felipe@gmail.com",
+      "DataCadastro": "2025-01-11T21:53:16.953-03:00",
+      "RendaMensal": 32000
+    }
+  ]
+}

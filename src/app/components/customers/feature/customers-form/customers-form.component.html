@@ -1,0 +1,44 @@
+<div class="flex flex-col justify-center items-center w-full">
+  <div class="flex flex-col items-center container">
+    <div class="flex w-full container__header__align">
+      <h1 class="body-text regular">ADICIONAR CLIENTE</h1>
+    </div>
+    <form class="w-full grid grid-cols-12" [formGroup]="form" (ngSubmit)="submit(form)">
+      <div class="col-span-6">
+        <app-input class="w-full" formControlName="NomeCliente" [id]="'NomeCliente'" [name]="'NomeCliente'" [for]="'NomeCliente'" [id]="'NomeCliente'"
+          [label]="'Nome Completo:'" [placeholder]="'Nome Completo'" [type]="'text'" [errorState]="form.controls.NomeCliente.hasError('surname')"/>
+        <app-input-validation-message controlName="NomeCliente"/>
+      </div>
+    
+      <div class="col-span-6">
+        <app-input class="w-full" formControlName="Email" [id]="'Email'" [name]="'Email'" [for]="'Email'" [id]="'Email'"
+          [label]="'E-mail:'" [placeholder]="'nome@email.com'" [type]="'text'"/>
+        <app-input-validation-message controlName="Email"/>
+      </div>
+    
+      <div class="col-span-4">
+        <app-input class="w-full" formControlName="DataNascimento" [id]="'DataNascimento'" [name]="'DataNascimento'" [for]="'DataNascimento'" [id]="'DataNascimento'"
+          [label]="'Data de Nascimento:'" [placeholder]="'00/00/0000'" [mask]="'00/00/0000'" [type]="'text'"/>
+        <app-input-validation-message controlName="DataNascimento"/>
+      </div>
+    
+      <div class="col-span-4">
+        <app-input class="w-full" formControlName="RendaMensal" [id]="'RendaMensal'" [name]="'RendaMensal'" [for]="'RendaMensal'" [id]="'RendaMensal'"
+          [label]="'Renda Mensal:'" [currencyMask]="true" [placeholder]="'Renda Mensal'" [type]="'text'"/>
+        <app-input-validation-message controlName="RendaMensal"/>
+      </div>
+    
+      <div class="col-span-4">
+        <app-input class="w-full" formControlName="Cpf" [id]="'Cpf'" [name]="'Cpf'" [for]="'Cpf'" [id]="'Cpf'"
+          [label]="'Cpf:'" [placeholder]="'XXX.XXX.XXX-XX'" [mask]="'XXX.XXX.XXX-XX'" [type]="'text'"/>
+        <app-input-validation-message controlName="Cpf"/>
+      </div>
+    
+      <div class="col-span-12">
+        <app-button [disabled]="!form.valid" class="w-full flex justify-end" [text]="'Salvar'"/>
+      </div>
+  
+    </form>
+  </div>
+</div>
+

@@ -1,0 +1,108 @@
+
+<section class="flex h-full w-full justify-center">
+  <div class="container flex flex-col">
+    <div class="flex flex-col w-full container__header__align">
+      <h1 class="body-text regular">CLIENTES</h1>
+      <div class="buttons flex justify-end">
+          <app-button (click)="clearFilters()" [text]="'Limpar Filtros'"/>
+          <app-button (click)="customersFacade.navigate(['/customer'])" [text]="'Cadastrar Cliente'"/>
+      </div>
+    </div>
+
+    <div class="custom flex">
+      <div class="flex items-center">
+        <div class="custom__search">      
+          <input matInput [(ngModel)]="nomeCliente" class="custom__search__input" name="input" id="input" type="text">
+          <label class="custom__search__label body-text tiny" for="input">Nome Cliente:</label>
+        </div>
+        <svg (click)="applyFilter(nomeCliente, 'NomeCliente')" class="custom__search__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 10C4 6.691 6.691 4 10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10ZM21.707 20.293L16.312 14.897C17.366 13.543 18 11.846 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18C11.846 18 13.542 17.365 14.897 16.312L20.293 21.707C20.488 21.902 20.744 22 21 22C21.256 22 21.512 21.902 21.707 21.707C22.098 21.316 22.098 20.684 21.707 20.293Z" fill="#0EA0C0"/>
+        </svg>
+      </div>
+  
+      <div class="flex items-center">
+        <div class="custom__search">      
+          <input matInput [(ngModel)]="cpf" class="custom__search__input" name="input" id="input" type="text">
+          <label class="custom__search__label body-text tiny" for="input">CPF:</label>
+        </div>
+        <svg (click)="applyFilter(cpf, 'Cpf')" class="custom__search__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 10C4 6.691 6.691 4 10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10ZM21.707 20.293L16.312 14.897C17.366 13.543 18 11.846 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18C11.846 18 13.542 17.365 14.897 16.312L20.293 21.707C20.488 21.902 20.744 22 21 22C21.256 22 21.512 21.902 21.707 21.707C22.098 21.316 22.098 20.684 21.707 20.293Z" fill="#0EA0C0"/>
+        </svg>
+      </div>
+  
+      <div class="flex items-center">
+        <div class="custom__search">      
+          <input matInput [(ngModel)]="dataNascimento" class="custom__search__input" name="input" id="input" type="text">
+          <label class="custom__search__label body-text tiny" for="input">Data de Nascimento:</label>
+        </div>
+        <svg (click)="applyFilter(dataNascimento, 'DataNascimento')" class="custom__search__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M4 10C4 6.691 6.691 4 10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10ZM21.707 20.293L16.312 14.897C17.366 13.543 18 11.846 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18C11.846 18 13.542 17.365 14.897 16.312L20.293 21.707C20.488 21.902 20.744 22 21 22C21.256 22 21.512 21.902 21.707 21.707C22.098 21.316 22.098 20.684 21.707 20.293Z" fill="#0EA0C0"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="mat-elevation-z8">
+      <table mat-table matSort [dataSource]="dataSource" class="w-full">
+        <ng-container matColumnDef="id">
+          <th class="body-text tiny" mat-header-cell *matHeaderCellDef mat-sort-header> </th>
+          <td class="body-text tiny relative flex justify-center items-center h-full" mat-cell *matCellDef="let customer; let i = index">
+              <app-checkbox [radioBehavior]="true" [checked]="checkedIndex === i"  (check)="onChecked(i, customer)"/>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="NomeCliente">
+            <th class="body-text tiny" mat-header-cell *matHeaderCellDef mat-sort-header> Nome </th>
+            <td class="body-text tiny relative" mat-cell *matCellDef="let customer"> {{customer.NomeCliente}} </td>
+        </ng-container>
+        
+          <ng-container matColumnDef="Cpf">
+            <th class="body-text tiny" mat-header-cell *matHeaderCellDef> CPF </th>
+            <td class="body-text tiny relative" mat-cell *matCellDef="let customer"> {{customer.Cpf | cpf}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="RendaMensal">
+            <th class="body-text tiny" mat-header-cell *matHeaderCellDef mat-sort-header> Renda Mensal </th>
+            <td class="body-text tiny relative" mat-cell *matCellDef="let customer"> {{customer.RendaMensal | currency:'BRL':'symbol':'1.2-2'}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="DataNascimento">
+            <th class="body-text tiny" mat-header-cell *matHeaderCellDef> Data Nascimento </th>
+            <td class="body-text tiny relative" mat-cell *matCellDef="let customer"> {{customer.DataNascimento }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="DataCadastro">
+            <th class="body-text tiny" mat-header-cell *matHeaderCellDef> Data Cadastro </th>
+            <td class="body-text tiny relative" mat-cell *matCellDef="let customer"> {{customer.DataCadastro }} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="edit">
+            <th class="body-text tiny relative flex items-center h-full" mat-header-cell *matHeaderCellDef></th>
+            <td class="body-text tiny " mat-cell *matCellDef="let customer;" (click)="editCustomer(customer)">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24"  width="15" height="15"><path d="M18.656.93,6.464,13.122A4.966,4.966,0,0,0,5,16.657V18a1,1,0,0,0,1,1H7.343a4.966,4.966,0,0,0,3.535-1.464L23.07,5.344a3.125,3.125,0,0,0,0-4.414A3.194,3.194,0,0,0,18.656.93Zm3,3L9.464,16.122A3.02,3.02,0,0,1,7.343,17H7v-.343a3.02,3.02,0,0,1,.878-2.121L20.07,2.344a1.148,1.148,0,0,1,1.586,0A1.123,1.123,0,0,1,21.656,3.93Z"/><path d="M23,8.979a1,1,0,0,0-1,1V15H18a3,3,0,0,0-3,3v4H5a3,3,0,0,1-3-3V5A3,3,0,0,1,5,2h9.042a1,1,0,0,0,0-2H5A5.006,5.006,0,0,0,0,5V19a5.006,5.006,0,0,0,5,5H16.343a4.968,4.968,0,0,0,3.536-1.464l2.656-2.658A4.968,4.968,0,0,0,24,16.343V9.979A1,1,0,0,0,23,8.979ZM18.465,21.122a2.975,2.975,0,0,1-1.465.8V18a1,1,0,0,1,1-1h3.925a3.016,3.016,0,0,1-.8,1.464Z"/>
+              </svg>
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="delete">
+            <th class="body-text tiny relative flex items-center h-full" mat-header-cell *matHeaderCellDef></th>
+            <td class="body-text tiny " mat-cell *matCellDef="let customer;" (click)="deleteCustomer(customer)">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="15" height="15">
+                <path d="M21,4H17.9A5.009,5.009,0,0,0,13,0H11A5.009,5.009,0,0,0,6.1,4H3A1,1,0,0,0,3,6H4V19a5.006,5.006,0,0,0,5,5h6a5.006,5.006,0,0,0,5-5V6h1a1,1,0,0,0,0-2ZM11,2h2a3.006,3.006,0,0,1,2.829,2H8.171A3.006,3.006,0,0,1,11,2Zm7,17a3,3,0,0,1-3,3H9a3,3,0,0,1-3-3V6H18Z"/>
+                <path d="M10,18a1,1,0,0,0,1-1V11a1,1,0,0,0-2,0v6A1,1,0,0,0,10,18Z"/>
+                <path d="M14,18a1,1,0,0,0,1-1V11a1,1,0,0,0-2,0v6A1,1,0,0,0,14,18Z"/>
+              </svg> 
+            </td>
+          </ng-container>
+
+
+        
+          <tr mat-header-row *matHeaderRowDef="columns"></tr>
+          <tr class="body-text tiny relative" mat-row *matRowDef="let row; columns: columns;let index = index;" [ngClass]="{'odd-row': index % 2 === 1, 'even-row': index % 2 === 0}"></tr>
+      </table>
+      <mat-paginator nextPageLabel cdk-overlay-origin [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page"></mat-paginator>
+    </div>
+  </div>
+</section>
+
+<app-alert/>
+

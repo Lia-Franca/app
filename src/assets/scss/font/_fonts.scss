@@ -1,0 +1,87 @@
+@font-face {
+  src: local("Montserrat"), url('../../fonts/Montserrat.ttf') format("truetype");
+  font-face-name: Montserrat;
+  font-family: Montserrat;
+}
+
+
+:root {
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+@mixin heading-style($font, $weight, $size, $letter-spacing, $line-height) {
+  font-family: $font;
+  font-weight: $weight;
+  font-size: $size;
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
+}
+
+h1 {
+  @include heading-style(var(--font-montserrat), 800, 36px, normal, 130%);
+}
+
+h2 {
+  @include heading-style(var(--font-montserrat), 700, 34px, normal, 130%);
+}
+
+h3, h5 {
+  @include heading-style(var(--font-montserrat), 700, 32px, normal, 130%);
+}
+
+h6 {
+  @include heading-style(var(--font-montserrat), 700, 24px, normal, 130%);
+}
+
+h4, h7 {
+  @include heading-style(var(--font-montserrat), 400, 24px, normal, 130%);
+}
+
+p {
+  font-family: var(--font-montserrat);
+  font-size: 20px;
+  letter-spacing: normal;
+  line-height: 130%;
+}
+
+.body-text {
+  &.regular {
+    font-family: var(--font-montserrat);
+    font-size: 20px;
+    letter-spacing: normal;
+    line-height: 130%;
+  }
+  
+  &.bold {
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 130%;
+  }
+  
+  &.small {
+    font-family: var(--font-montserrat);
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: 130%;
+  }
+  
+  &.extra-small {
+    font-family: var(--font-montserrat);
+    font-size: 12px;
+    letter-spacing: normal;
+    line-height: 130%;
+  }
+  
+  &.tiny {
+    font-family: var(--font-montserrat);
+    font-size: 10px;
+    letter-spacing: normal;
+    line-height: 150%;
+  }
+  
+  &.distant {
+    line-height: 150%;
+  }
+}

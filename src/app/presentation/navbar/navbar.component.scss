@@ -1,0 +1,12 @@
+
+
+header {
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-text-color);
+    height: 55px;
+    gap: 4px;
+
+    & p {
+        font-weight: 500;
+    }
+}
